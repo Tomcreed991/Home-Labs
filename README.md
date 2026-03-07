@@ -34,4 +34,4 @@ Resolution: Conducted a root-cause analysis using ipconfig /all. Identified a mi
 Security Best Practice: Used 127.0.0.1 (Loopback) as the Preferred DNS to ensure the Domain Controller manages its own name resolution, a critical requirement for Active Directory health.
 
 # Visual Proof 
-![Lab Screenshot](AD-Management.PDF) 
+![Lab Screenshot](AD-Managment-.pdf) 
