@@ -118,3 +118,15 @@ Security Best Practice: Used 127.0.0.1 (Loopback) as the Preferred DNS to ensure
 * **Network Validation:** Confirmed that static IP 192.168.10.10 and DNS settings are providing stable name resolution.
 * **IAM Implementation:** Authenticated using standard user credentials (bhoy) to verify Active Directory propagation.
 * **Security Observation:** Verified that 'User must change password at next logon' policy is functioning as intended on the client machine.
+
+## Day 4: Enterprise Automation via Group Policy (GPO)
+* **Objective:** Implement automated resource provisioning for the 'Operations' department.
+* **Implementation:** Created a GPO to map the '\\DC01\Operations_Data' share to the 'Z:' drive for all users in the 'Employees' OU.
+* **Technical Logic:** Utilized GPO Preferences with 'Replace' action to ensure drive persistence across user sessions.
+* **Outcome:** Successfully verified drive mapping for user 'bh', demonstrating scalable infrastructure management.
+
+* ## Day 4: Validation of Centralized Resource Provisioning
+* **Success:** Verified that 'GPO_Map_Operations_Drive' successfully pushed the network share to the 'WIN11-CL01' endpoint.
+* **Result:** User 'bh' (Billy H) automatically received the 'Z:' drive upon login without manual intervention.
+* **Permission Audit:** Confirmed 'Modify' rights for the 'Operations_Staff' security group by successfully creating and editing test files within the mapped volume.
+* **Scalability Note:** This configuration ensures that any new user added to the 'Employees' OU will automatically inherit this infrastructure, minimizing administrative overhead.
