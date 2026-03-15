@@ -130,3 +130,18 @@ Security Best Practice: Used 127.0.0.1 (Loopback) as the Preferred DNS to ensure
 * **Result:** User 'bh' (Billy H) automatically received the 'Z:' drive upon login without manual intervention.
 * **Permission Audit:** Confirmed 'Modify' rights for the 'Operations_Staff' security group by successfully creating and editing test files within the mapped volume.
 * **Scalability Note:** This configuration ensures that any new user added to the 'Employees' OU will automatically inherit this infrastructure, minimizing administrative overhead.
+
+## Security Simulation: Brute Force Mitigation & Forensic Analysis
+* **Scenario:** Simulated a password-guessing attack against user 'bh'.
+* **Security Control:** Implemented a '3-strike' Account Lockout Policy via GPO.
+* **Incident Response:** Verified the policy successfully triggered a lockout on the 4th unauthorized attempt.
+* **Forensic Investigation:** Utilized Windows Event Viewer to identify 'Event ID 4740'. Confirmed the source machine (WIN11-CL01) and the timestamp of the breach.
+* **Cybersecurity takeaway:** Demonstrated the ability to bridge the gap between policy configuration and post-incident log analysis.
+
+## Day 5: Incident Response & Digital Forensics
+* **Scenario:** Verified Account Lockout Policy against a simulated brute-force attack.
+* **Forensic Tooling:** Utilized Windows Event Viewer to isolate Event ID 4740 (Account Lockout).
+* **Evidence:** Confirmed 'bhoy' account was locked out via 'WIN11-CL01' at [Current Time].
+* **Automation:** Executed a PowerShell 'Get-WinEvent' query to parse security logs for rapid incident identification.
+* **Analysis:** This workflow proves the effectiveness of the '3-strike' policy and the ability to conduct root-cause analysis on authentication failures.
+# Visual Proof 
