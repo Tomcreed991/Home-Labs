@@ -145,3 +145,4 @@ Security Best Practice: Used 127.0.0.1 (Loopback) as the Preferred DNS to ensure
 * **Automation:** Executed a PowerShell 'Get-WinEvent' query to parse security logs for rapid incident identification.
 * **Analysis:** This workflow proves the effectiveness of the '3-strike' policy and the ability to conduct root-cause analysis on authentication failures.
 # Visual Proof 
+![Lab Screenshot](Powershell-Security-Logs)  
