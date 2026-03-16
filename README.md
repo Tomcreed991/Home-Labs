@@ -146,3 +146,18 @@ Security Best Practice: Used 127.0.0.1 (Loopback) as the Preferred DNS to ensure
 * **Analysis:** This workflow proves the effectiveness of the '3-strike' policy and the ability to conduct root-cause analysis on authentication failures.
 # Visual Proof 
 ![Lab Screenshot](Powershell-Security-Logs)  
+
+## Day 6: Bulk Object Provisioning via Scripting
+* **Objective:** Transition from manual 'Point-and-Click' administration to scalable, data-driven automation.
+* **Methodology:** Utilized a CSV-based import workflow combined with a PowerShell 'ForEach' loop.
+* **Technical Achievement:** Successfully provisioned multiple user objects into the 'Employees' OU with consistent naming conventions and pathing.
+* **Cybersecurity Context:** This demonstrates the ability to manage 'Identity and Access Management' (IAM) at scale, reducing human error in the provisioning lifecycle.
+
+## Milestone: End-to-End Enterprise Provisioning Verified
+* **Validation:** Performed a clean login test using a scripted account ('svicious').
+* **Outcome:** Confirmed that the Mapped Drive GPO successfully applied to the new user based on their membership in the 'operations_staff' group.
+* **Technical Summary:** This lab successfully demonstrates the integration of three core IT pillars: 
+    1. Automated Account Creation (PowerShell/CSV)
+    2. Role-Based Access Control (Security Groups)
+    3. Centralized Resource Management (Group Policy)
+* **Status:** Infrastructure is stable, scalable, and audit-ready.
